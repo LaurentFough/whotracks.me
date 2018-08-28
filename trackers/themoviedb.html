@@ -1,0 +1,565 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Tracker | The Movie DB</title>
+    <meta name="description" content="Tracker profile of The Movie DB. Reach, domains it operates under, tracking technology, web presence by type of site and more.">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="same-origin">
+
+    
+    <!-- OG params for sharable content -->
+    <meta property="og:title" content="Tracker | The Movie DB">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://whotracks.me/trackers/themoviedb.html">
+    <meta property="og:description" content="Tracker profile of The Movie DB. Reach, domains it operates under, tracking technology, web presence by type of site and more.">
+
+
+    <!-- Stylesheets -->
+    <link rel="icon" href="../static/img/favicon-2.ico">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/css/custom.css">
+
+    <!--add this block to templates that need extra styling-->
+    
+    <link rel="stylesheet" href="../static/css/trackers/profile.css">
+
+
+    <!-- jQuery -->
+    <script src="../static/js/jquery.min.js"></script>
+    <!-- Plotly JS -->
+    <script src="../static/js/plotly-v1.29.3.min.js"></script>
+    <!-- For relative path resolution -->
+    <script>
+        var pathToRoot = ".."
+    </script>
+</head>
+
+<body>
+<nav class="navbar navbar-blue" role="navigation">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-2">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="..">
+                        <img class="logo" alt="Who Tracks Me" src="../static/img/logo-white.svg">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-10 col-sm-0">
+                <!--Collapsed under menu in mobile-->
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul id="imaginary_container">
+                        <div class="input-group stylish-input-group">
+                            <input id="search-bar" class="form-control" type="text" placeholder="Search website or tracker">
+                        </div>
+                    </ul>
+
+                    <!--Site links-->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li  class="active" >
+                            <a class="nav-button" href="../trackers.html">TRACKERS</a>
+                        </li>
+                        <li >
+                            <a class="nav-button" href="../websites.html">WEBSITES</a>
+                        </li>
+                        <li >
+                            <a class="nav-button" href="../blog.html">BLOG</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</nav>
+
+
+    
+
+    
+    <div class="breadcrumb-bar" style="border-bottom: solid 1px #333;">
+    
+        <div class="container">
+                <ul class="breadcrumb">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/trackers.html">Trackers</a></li>
+                    
+                        <li>The Movie DB</li>
+                    
+                </ul>
+        </div>
+    </div>
+    
+
+
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+    var operates_under_selector = '#operates-under p',
+        $operates_under_list = $(operates_under_selector),
+        operates_list_size = $operates_under_list.length,
+        items_to_show = 2,
+        $expand = $('.operates-expand'),
+        $collapse = $('.operates-collapse');
+    $(operates_under_selector + ':lt(' +items_to_show+')').show();
+    $expand.click(function(e) {
+        items_to_show = operates_list_size;
+        $(operates_under_selector + ':lt('+items_to_show+')').show();
+        if(items_to_show === operates_list_size) {
+            $collapse.removeClass('hidden');
+            $expand.addClass('hidden');
+        }
+    });
+
+    $collapse.click(function() {
+        $(this).addClass('hidden');
+        $expand.removeClass('hidden');
+        $operates_under_list.not(':lt(2)').hide();
+    });
+
+});
+</script>
+<div id="tracker-page" class="overview-page">
+    <div id="overview-header">
+        <div class="container">
+            <div class="row overview-info inverse">
+                <div class="col-md-6 col-sm-6">
+  <h1>The Movie DB</h1>
+  
+    <p class="header">Owned by The Movie DB</p>
+  
+  
+    <p id="domain">
+        <a target="_blank" rel="noreferrer"  href="https://www.themoviedb.org/">https://www.themoviedb.org/</a>
+    </p>
+  
+</div>
+
+<div class="col-md-6 col-sm-6">
+  <div class="overview-info-right">
+    <div class="row">
+      <div class="col-md-6 col-sm-6">
+        <p class="header">TRACKER RANK</p>
+        <p class="tracker-rank">
+          <span class="emphasis">517</span>
+          /1030
+        </p>
+        <p class="description">Relatively prevalent</p>
+      </div>
+
+      <div class="col-md-6 col-sm-6">
+        
+          <p class="header">OPERATES UNDER</p>
+          <div id="operates-under">
+          
+            <p>
+              <a class="profile-label"
+                 target="_blank"
+                 rel="noreferrer"
+                 href="//tmdb.org"> tmdb.org
+              </a>
+            </p>
+          
+
+          
+        </div>
+      
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div class="overview-header-box">
+  <div class="row">
+
+
+    <!-- LEFT COLUMN -->
+    <div class="col-md-6 col-sm-6">
+        <h3>TRACKER REACH</h3>
+        <div class="trend">
+          <img class="trackers-icon" src="../static/img/page.svg">
+          <span class="percentage">
+            0.1%
+            <span class="graph"><div id="9b1cc73a-2a48-4db2-98fd-8c6f638b5185" style="height: 100px; width: 153px;" class="plotly-graph-div"></div><script type="text/javascript">window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("9b1cc73a-2a48-4db2-98fd-8c6f638b5185", [{"type": "scatter", "x": ["2018-05-01", "2018-06-01", "2018-07-01"], "y": [0.13414858372149507, 0.10942163952802368, 0.0979169974881246], "text": ["0.13% on May 18", "0.11% on Jun 18", "0.10% on Jul 18"], "hoverinfo": "text", "line": {"color": "#A069AB", "width": 3, "dash": "solid"}, "opacity": 1, "mode": "lines", "marker": {"size": 10}}, {"type": "scatter", "x": ["2018-07-01"], "y": [0.0979169974881246], "text": ["0.10% on Jul 18"], "hoverinfo": "text", "line": {"color": "#A069AB", "width": 3, "dash": "solid"}, "opacity": 1, "mode": "markers", "marker": {"size": 10}}], {"showlegend": false, "margin": {"l": 10, "r": 10, "b": 40, "t": 30, "pad": 5}, "height": 100, "width": 153, "hoverlabel": {"bgcolor": "#1A1A25", "bordercolor": "#00000000", "font": {"family": "monospace", "size": 13, "color": "#BFCBD6"}}, "xaxis": {"autorange": true, "showgrid": false, "zeroline": false, "showline": false, "autotick": true, "hoverformat": "%b %y", "ticks": "", "showticklabels": false}, "yaxis": {"range": [0.08812529773931214, 0.14085601290756983], "showgrid": false, "zeroline": false, "showline": false, "autotick": true, "ticks": "", "showticklabels": false}}, {"showLink": false, "linkText": "Export to plot.ly", "displayModeBar": false})</script></span>
+          </span>
+
+          <p class="description">of web traffic is tracked by The Movie DB</p>
+      </div>
+      <div class="trend">
+          <img class="trackers-icon" src="../static/img/domain.svg">
+          <span class="percentage">
+            0.2%
+            <span class="graph"><div id="3c1cde1c-f4ae-46b6-9c3f-1e8b47122d5e" style="height: 100px; width: 153px;" class="plotly-graph-div"></div><script type="text/javascript">window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("3c1cde1c-f4ae-46b6-9c3f-1e8b47122d5e", [{"type": "scatter", "x": ["2018-05-01", "2018-06-01", "2018-07-01"], "y": [0.17084129437736975, 0.15510033381924412, 0.16850500480004296], "text": ["0.17% on May 18", "0.16% on Jun 18", "0.17% on Jul 18"], "hoverinfo": "text", "line": {"color": "#A069AB", "width": 3, "dash": "solid"}, "opacity": 1, "mode": "lines", "marker": {"size": 10}}, {"type": "scatter", "x": ["2018-07-01"], "y": [0.16850500480004296], "text": ["0.17% on Jul 18"], "hoverinfo": "text", "line": {"color": "#A069AB", "width": 3, "dash": "solid"}, "opacity": 1, "mode": "markers", "marker": {"size": 10}}], {"showlegend": false, "margin": {"l": 10, "r": 10, "b": 40, "t": 30, "pad": 5}, "height": 100, "width": 153, "hoverlabel": {"bgcolor": "#1A1A25", "bordercolor": "#00000000", "font": {"family": "monospace", "size": 13, "color": "#BFCBD6"}}, "xaxis": {"autorange": true, "showgrid": false, "zeroline": false, "showline": false, "autotick": true, "hoverformat": "%b %y", "ticks": "", "showticklabels": false}, "yaxis": {"range": [0.1395903004373197, 0.17938335909623826], "showgrid": false, "zeroline": false, "showline": false, "autotick": true, "ticks": "", "showticklabels": false}}, {"showLink": false, "linkText": "Export to plot.ly", "displayModeBar": false})</script></span>
+          </span>
+          <p class="description">of sites use the The Movie DB tracker</p>
+      </div>
+      <p class="subtitle">
+        
+          Data from May 2018 to July 2018.
+        
+      </p>
+    </div>
+
+
+    <!-- Right COLUMN -->
+    <div class="col-md-6 col-sm-6">
+          <h3>SEEN ON THESE TYPES OF WEBSITES</h3>
+          
+          
+            <div class="clearfix">
+              <span class="progress-presence">57% </span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar"  aria-valuenow="71.25" aria-valuemin="0" aria-valuemax="100" style="width: 71.25%">
+                Entertainment
+                </div>
+              </div>
+            </div>
+            
+          
+          
+            <div class="clearfix">
+              <span class="progress-presence">43% </span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar"  aria-valuenow="53.75" aria-valuemin="0" aria-valuemax="100" style="width: 53.75%">
+                Business
+                </div>
+              </div>
+            </div>
+            
+          
+
+          <h3>TRACKING TYPE</h3>
+          <div class="row tracking-methods">
+            
+              <div  class="col-md-8" >
+                <img src="../static/img/cookies.svg">
+<p class="tracking-method">
+  <span class="highlight">COOKIES</span> are files placed by the website, stored in the browser
+  that is used to identify you to the website. <div>
+    <a class="learn-more" href="../blog/cookies.html">
+      Learn more
+      <i class="fa fa-angle-right" aria-hidden="true"></i>
+    </a>
+  </div>
+</p>
+              </div>
+            
+
+            
+            
+          </div>
+    </div>
+  </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="similar-trackers">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="row tracker-category">
+                        <div class="col-md-11">
+                        <h4>TRACKER CATEGORY</h4>
+                        
+                            <span class="cat-item">
+                                <i class="fa fa-circle" style="color: #80C87D" aria-hidden="true"></i>
+                                Misc
+                            </span>
+                            <p class="tracker-desc">This tracker does not fit in other categories or has not yet been labelled.</p>
+                        
+                        <p>
+                            <i class="fa fa-info-circle"></i>
+                            <a href="../blog/tracker_categories.html">Learn about our tracker categories</a>
+                        </p>
+                        <p>
+                            <i class="fa fa-info-circle"></i>
+                            <a href="../blog/what_is_a_tracker.html">What is a tracker?</a>
+                        </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6  col-sm-6 col-xs-12">
+                    <h4>SIMILAR TRACKERS</h4>
+                    <ul>
+                        
+                            <li>
+                                <a href="../trackers/outbrain.html" class="entity-name">
+                                Outbrain
+                                </a>
+                                
+                                    <span>
+                                        Outbrain UK Ltd
+                                    </span>
+                                
+                            </li>
+                        
+                            <li>
+                                <a href="../trackers/microsoft.html" class="entity-name">
+                                Microsoft Services
+                                </a>
+                                
+                                    <span>
+                                        Microsoft
+                                    </span>
+                                
+                            </li>
+                        
+                            <li>
+                                <a href="../trackers/linkedin.html" class="entity-name">
+                                LinkedIn
+                                </a>
+                                
+                                    <span>
+                                        LinkedIn
+                                    </span>
+                                
+                            </li>
+                        
+                            <li>
+                                <a href="../trackers/instagram_com.html" class="entity-name">
+                                Instagram
+                                </a>
+                                
+                                    <span>
+                                        Facebook
+                                    </span>
+                                
+                            </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="tag-cloud">
+        <div class="container">
+            <div class="row">
+                <h2 class="title">Presence on top sites</h2>
+                
+                    <script src="../static/js/d3.min.js"></script>
+<script src="../static/js/d3.layout.cloud.js"></script>
+
+<script>
+        function sanitiseCategory(cat) {
+            return cat.replace(/\s/g, '_').toLowerCase();
+        }
+
+        function drawTagCloud(cat, siteList) {
+            var container = document.getElementById('tag_cloud_container');
+            var width = Math.max(container.offsetWidth, 300);
+            var height = Math.max(container.offsetHeight - 5, 400);
+            var containerSvg = document.getElementById('tag_cloud');
+            containerSvg.setAttribute('width', width);
+            containerSvg.setAttribute('height', height);
+
+            var sites = JSON.parse(siteList);
+            var minSize = 20;
+            var maxSize = 100;
+            var scaleFactor = (maxSize - minSize) / 0.3;
+
+            var layout = d3.layout.cloud()
+                .size([width, height])
+                .words(sites.map(function (d) {
+                    return {
+                        text: d.site.replace('www.', ''),
+                        size: Math.min(maxSize, minSize + d.frequency * scaleFactor),
+                        rotate: 0,
+                        opacity: 0.5 + (d.site_freq || 0. * 0.7),
+                        colour: d.site_cat,
+                        href: d.url,
+                        category: d.category,
+                    };
+                }))
+                .padding(3)
+                .rotate(function (d) { return 0 })
+                .font("Impact")
+                .fontSize(function (d) { return d.size; })
+                .on("end", draw);
+
+            layout.start();
+
+            function draw(words) {
+                d3.select('#tag_cloud')
+                    .append("g")
+                    .attr("transform", "translate(" + layout.size()[0] / 2 + "," + layout.size()[1] / 2 + ")")
+                    .selectAll("text")
+                    .data(words)
+                    .enter().append("text")
+                    .style("font-size", function (d) { return d.size + "px"; })
+                    .style("font-family", "Helvetica")
+                    .style("fill", function (d) { return d.colour })
+                    .attr("class", function (d) { return "category-" + sanitiseCategory(d.category) })
+                    .attr("opacity", function (d) { return d.opacity })
+                    .attr("text-anchor", "middle")
+                    .attr("transform", function (d) {
+                        return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+                    })
+                    .insert('a')
+                    .attr("href", function (d) { return d.href })
+                    .text(function (d) { return d.text; });
+            }
+        }
+
+        var activeCategories = [];
+
+        function toggleTagCloudCategory(cat) {
+            if (cat === "all") {
+                // unselect buttons
+                activeCategories.forEach(function(otherCat) {
+                    document.getElementById('button-' + otherCat).classList.remove('active');
+                });
+                document.getElementById('button-all').classList.add('active');
+                // make everything visible
+                d3.selectAll("#tag_cloud text").style("visibility", "visible");
+                activeCategories = [];
+            } else {
+                document.getElementById('button-all').classList.remove('active');
+                document.getElementById('button-' + cat).classList.add('active');
+
+                if (activeCategories.length === 0) {
+                    // hide everything
+                    d3.selectAll("#tag_cloud text").style("visibility", "hidden");
+                }
+                // make just elements from specified categories visible
+                d3.selectAll("#tag_cloud text.category-" + sanitiseCategory(cat)).style("visibility", "visible");
+                activeCategories.push(cat);
+            }
+        }
+    </script>
+
+
+<ul class="nav nav-tabs">
+    <li class="active" id="button-all">
+        <a href="#all" onclick="toggleTagCloudCategory('all')">Show all</a>
+    </li>
+    
+        
+    
+        
+            <li id="button-Business">
+                <a href="#Business" onclick="toggleTagCloudCategory('Business')">Business</a>
+            </li>
+        
+    
+        
+            <li id="button-Entertainment">
+                <a href="#Entertainment" onclick="toggleTagCloudCategory('Entertainment')">Entertainment</a>
+            </li>
+        
+    
+</ul>
+
+<div class="tab-content">
+    <div id="tag_cloud_container" class="tab-pane fade in active">
+        <svg id="tag_cloud" height=400></svg>
+        <script>drawTagCloud('all', '[{"category": "Entertainment", "frequency": 0.03936382761951388, "site": "indoxx1.com", "site_cat": "#B8B8B8", "site_freq": 0.7279177881086372, "url": "../websites/indoxx1.com.html"}, {"category": "Business", "frequency": 0.037570954126255336, "site": "filelist.ro", "site_cat": "blue", "site_freq": 0.4935900221633132, "url": "../websites/filelist.ro.html"}, {"category": "", "frequency": 0.035563068129192736, "site": "filmeserialeonline.org", "site_cat": "#000", "site_freq": 0.9315483926869422, "url": null}, {"category": "", "frequency": 0.03372057636582558, "site": "pelisplus.tv", "site_cat": "#000", "site_freq": 0.9374655140702594, "url": null}, {"category": "", "frequency": 0.021484710957037197, "site": "themoviedb.org", "site_cat": "#000", "site_freq": 0.8748653017241379, "url": null}, {"category": "", "frequency": 0.019824152850735008, "site": "flixtor.to", "site_cat": "#000", "site_freq": 0.8393557422969188, "url": null}, {"category": "", "frequency": 0.019427206689865962, "site": "openloadmovies.tv", "site_cat": "#000", "site_freq": 0.9116733933561004, "url": null}, {"category": "", "frequency": 0.01877886129377985, "site": "vexmovies.org", "site_cat": "#000", "site_freq": 0.9183112261404076, "url": null}, {"category": "", "frequency": 0.01827937070801964, "site": "gostream.site", "site_cat": "#000", "site_freq": 0.8630329533031391, "url": null}, {"category": "", "frequency": 0.01761779377323789, "site": "filmesonlinehd7.cc", "site_cat": "#000", "site_freq": 0.8879626542180727, "url": null}, {"category": "", "frequency": 0.017511941463672808, "site": "repelis.live", "site_cat": "#000", "site_freq": 0.905266757865937, "url": null}, {"category": "", "frequency": 0.015841459703348902, "site": "peliculasyseries.org", "site_cat": "#000", "site_freq": 0.9633876483604908, "url": null}, {"category": "", "frequency": 0.014531537372481047, "site": "movs4u.tv", "site_cat": "#000", "site_freq": 0.8515216127156425, "url": null}, {"category": "", "frequency": 0.013301004273786998, "site": "filmcomplet.la", "site_cat": "#000", "site_freq": 0.34285470668485674, "url": null}, {"category": "", "frequency": 0.012953676383026582, "site": "inkapelis.com", "site_cat": "#000", "site_freq": 0.9216286184984702, "url": null}, {"category": "", "frequency": 0.012110165791179857, "site": "ilgeniodellostreaming.org", "site_cat": "#000", "site_freq": 0.49094810245407, "url": null}, {"category": "", "frequency": 0.01192492424944097, "site": "miradetodo.io", "site_cat": "#000", "site_freq": 0.7828447339847991, "url": null}, {"category": "", "frequency": 0.010413220953464678, "site": "danimados.com", "site_cat": "#000", "site_freq": 0.910089621277826, "url": null}, {"category": "", "frequency": 0.009606097093030948, "site": "fr-streaming.co", "site_cat": "#000", "site_freq": 0.5562152844282704, "url": null}, {"category": "", "frequency": 0.009255461317596624, "site": "onlinefilmekingyen.com", "site_cat": "#000", "site_freq": 0.90785204412719, "url": null}, {"category": "", "frequency": 0.009189303624118449, "site": "123movie.cc", "site_cat": "#000", "site_freq": 0.8694835680751174, "url": null}, {"category": "Entertainment", "frequency": 0.008706352461727775, "site": "yggtorrent.is", "site_cat": "#B8B8B8", "site_freq": 0.027573202032371274, "url": "../websites/yggtorrent.is.html"}, {"category": "", "frequency": 0.008623655344880056, "site": "official-film-illimite.ws", "site_cat": "#000", "site_freq": 0.5138971023063276, "url": null}, {"category": "", "frequency": 0.008494647842597616, "site": "channelmyanmar.org", "site_cat": "#000", "site_freq": 0.8299935358758889, "url": null}, {"category": "", "frequency": 0.008451645341836803, "site": "pepecine.io", "site_cat": "#000", "site_freq": 0.8034591194968553, "url": null}, {"category": "", "frequency": 0.008177090913902377, "site": "pelisgratis.tv", "site_cat": "#000", "site_freq": 0.9417142857142856, "url": null}, {"category": "", "frequency": 0.008067930719663389, "site": "movie4k.is", "site_cat": "#000", "site_freq": 0.8996680191811139, "url": null}, {"category": "", "frequency": 0.007022639162708231, "site": "werstreamt.es", "site_cat": "#000", "site_freq": 0.8882845188284518, "url": null}, {"category": "", "frequency": 0.0069432499305344215, "site": "seriesypelis24.com", "site_cat": "#000", "site_freq": 0.9358002674988856, "url": null}, {"category": "", "frequency": 0.006595922039774005, "site": "nanime.in", "site_cat": "#000", "site_freq": 0.7695870320339637, "url": null}, {"category": "", "frequency": 0.006526456461621922, "site": "vezi-online.org", "site_cat": "#000", "site_freq": 0.8680158380994281, "url": null}, {"category": "", "frequency": 0.006380909535969938, "site": "dadyflix.com", "site_cat": "#000", "site_freq": 0.9103350637092968, "url": null}, {"category": "", "frequency": 0.006344522804556942, "site": "gledajseriju.com", "site_cat": "#000", "site_freq": 0.9025882352941176, "url": null}, {"category": "", "frequency": 0.006331291265861307, "site": "cimaclub.com", "site_cat": "#000", "site_freq": 0.15037712130735387, "url": null}, {"category": "", "frequency": 0.006208899532926684, "site": "thepiratefilmeshd.com", "site_cat": "#000", "site_freq": 0.8742431299487657, "url": null}, {"category": "", "frequency": 0.0061262024160789645, "site": "fanpelis.com", "site_cat": "#000", "site_freq": 0.9209348582794631, "url": null}, {"category": "", "frequency": 0.006103047223361605, "site": "pelis24.is", "site_cat": "#000", "site_freq": 0.9276018099547512, "url": null}, {"category": "", "frequency": 0.00590788202760099, "site": "streamzzz.top", "site_cat": "#000", "site_freq": 0.6360398860398859, "url": null}, {"category": "", "frequency": 0.005696177408470831, "site": "cinemay.com", "site_cat": "#000", "site_freq": 0.5432176656151421, "url": null}, {"category": "", "frequency": 0.005501012212710215, "site": "ver-pelis.me", "site_cat": "#000", "site_freq": 0.9651770168311086, "url": null}, {"category": "", "frequency": 0.0053587731717321405, "site": "cdax.online", "site_cat": "#000", "site_freq": 0.9557522123893806, "url": null}, {"category": "", "frequency": 0.0053058470169496, "site": "pelisplus.online", "site_cat": "#000", "site_freq": 0.7843520782396088, "url": null}, {"category": "", "frequency": 0.004879129894015375, "site": "cine-online.eu", "site_cat": "#000", "site_freq": 0.9236067626800252, "url": null}, {"category": "", "frequency": 0.004829511623906744, "site": "vivatorrents.com", "site_cat": "#000", "site_freq": 0.9346991037131882, "url": null}, {"category": "", "frequency": 0.004816280085211109, "site": "ddlfr.pw", "site_cat": "#000", "site_freq": 0.3139284174213023, "url": null}, {"category": "", "frequency": 0.004617807004776585, "site": "yo-movies.com", "site_cat": "#000", "site_freq": 0.8824273072060683, "url": null}, {"category": "", "frequency": 0.004548341426624502, "site": "bajuineros.com", "site_cat": "#000", "site_freq": 0.8957654723127035, "url": null}, {"category": "", "frequency": 0.0044656443097767845, "site": "quedustreaming.com", "site_cat": "#000", "site_freq": 0.3028263795423957, "url": null}, {"category": "", "frequency": 0.004429257578363788, "site": "watch4hd.com", "site_cat": "#000", "site_freq": 0.8480050664977834, "url": null}, {"category": "", "frequency": 0.004267171229342261, "site": "filmstreaming.to", "site_cat": "#000", "site_freq": 0.4328859060402685, "url": null}, {"category": "", "frequency": 0.004237400267277082, "site": "cuevana2.com", "site_cat": "#000", "site_freq": 0.17433315187806206, "url": null}, {"category": "", "frequency": 0.004154703150429364, "site": "film4kstream.com", "site_cat": "#000", "site_freq": 0.9359165424739196, "url": null}, {"category": "", "frequency": 0.0039529221853209316, "site": "simpsonizados.org", "site_cat": "#000", "site_freq": 0.4430849091583241, "url": null}, {"category": "", "frequency": 0.003873532953147122, "site": "mastorrents.com", "site_cat": "#000", "site_freq": 0.9315831344470964, "url": null}, {"category": "", "frequency": 0.0038636092991253955, "site": "fmovie.cc", "site_cat": "#000", "site_freq": 0.8506919155134741, "url": null}, {"category": "", "frequency": 0.0038305304523863076, "site": "inkaseries.net", "site_cat": "#000", "site_freq": 0.9118110236220472, "url": null}, {"category": "", "frequency": 0.003797451605647221, "site": "watchfriendsonline.net", "site_cat": "#000", "site_freq": 0.9526970954356846, "url": null}, {"category": "", "frequency": 0.0037742964129298603, "site": "playview.io", "site_cat": "#000", "site_freq": 0.7516469038208169, "url": null}, {"category": "", "frequency": 0.0037577569895603158, "site": "seriesenlinea.net", "site_cat": "#000", "site_freq": 0.9635284139100933, "url": null}, {"category": "", "frequency": 0.003678367757386506, "site": "wikiseriesypelis.com", "site_cat": "#000", "site_freq": 0.7225471085120208, "url": null}, {"category": "", "frequency": 0.0035559760244518834, "site": "seriestreaming.club", "site_cat": "#000", "site_freq": 0.9156729131175468, "url": null}, {"category": "", "frequency": 0.003453431599560713, "site": "openloadmovie.org", "site_cat": "#000", "site_freq": 0.9263531499556344, "url": null}, {"category": "", "frequency": 0.0033872739060825385, "site": "megashare.gg", "site_cat": "#000", "site_freq": 0.7329992841803865, "url": null}, {"category": "", "frequency": 0.0033244240972782725, "site": "hentaimama.com", "site_cat": "#000", "site_freq": 0.29472140762463345, "url": null}]')</script>
+    </div>
+
+</div>
+                
+            </div>
+        </div>
+    </section>
+</div>
+
+
+
+
+    
+
+    
+    <div class="breadcrumb-bar" style="border-bottom: solid 1px #333;">
+    
+        <div class="container">
+                <ul class="breadcrumb">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/trackers.html">Trackers</a></li>
+                    
+                        <li>The Movie DB</li>
+                    
+                </ul>
+        </div>
+    </div>
+    
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-12 menu">
+                <a href="/privacy-policy.html">
+                    Privacy Policy
+                </a>
+                <span class="divisor">&#x2027;</span>
+                <a target="_blank" href="https://cliqz.com/en/about">
+                    About
+                </a>
+                <span class="divisor">&#x2027;</span>
+                <a target="_blank" href="https://cliqz.com/en/about/careers">
+                    Careers
+                </a>
+                <span class="divisor">&#x2027;</span>
+                <a target="_blank" href="https://cliqz.com/en/download">
+                    Cliqz browser
+                </a>
+                <span class="divisor">&#x2027;</span>
+                <a target="_blank" href="https://www.ghostery.com/en/products/">
+                    Ghostery add-on
+                </a>
+                <span class="divisor">&#x2027;</span>
+                <i class="fa fa fa-github"></i>
+                <a target="_blank" rel="noreferrer" href="https://github.com/cliqz-oss/whotracks.me">
+                    Get the data
+                </a>
+                <div class="copyright">
+                    &copy; Cliqz - All rights reserved. Last updated on 28.08.2018
+                </div>
+
+            </div>
+
+            <div class="col-md-6 col-sm-6 col-xs-12 logos">
+                <a href="https://cliqz.com/en/" target="_blank">
+                    <span class="cliqz-logo"></span>
+                </a>
+                <a href="https://www.ghostery.com/" target="_blank">
+                    <span class="ghostery-logo"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Local javascript modules -->
+    <script src="../static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../static/js/search.js"></script>
+
+
+</footer>
+<!-- END OF FOOTER -->

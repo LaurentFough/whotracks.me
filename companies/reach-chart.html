@@ -1,0 +1,182 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>WhoTracks.me | Who Tracks the Most</title>
+    <meta name="description" content="The reach of trackers grouped by companies that own them.">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="same-origin">
+
+    
+    
+
+    <!-- Stylesheets -->
+    <link rel="icon" href="../static/img/favicon-2.ico">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/css/custom.css">
+
+    <!--add this block to templates that need extra styling-->
+    
+    <link rel="stylesheet" href="../static/css/companies/reach-chart.css">
+
+
+    <!-- jQuery -->
+    <script src="../static/js/jquery.min.js"></script>
+    <!-- Plotly JS -->
+    <script src="../static/js/plotly-v1.29.3.min.js"></script>
+    <!-- For relative path resolution -->
+    <script>
+        var pathToRoot = ".."
+    </script>
+</head>
+
+<body>
+<nav class="navbar navbar-blue" role="navigation">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-2">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="..">
+                        <img class="logo" alt="Who Tracks Me" src="../static/img/logo-white.svg">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-10 col-sm-0">
+                <!--Collapsed under menu in mobile-->
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul id="imaginary_container">
+                        <div class="input-group stylish-input-group">
+                            <input id="search-bar" class="form-control" type="text" placeholder="Search website or tracker">
+                        </div>
+                    </ul>
+
+                    <!--Site links-->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li >
+                            <a class="nav-button" href="../trackers.html">TRACKERS</a>
+                        </li>
+                        <li >
+                            <a class="nav-button" href="../websites.html">WEBSITES</a>
+                        </li>
+                        <li >
+                            <a class="nav-button" href="../blog.html">BLOG</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</nav>
+
+
+
+
+
+<section class="grey-bg top-buffer">
+    <div class="container">
+        <div class="row home-plot">
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-9 col-sm-9">
+                        <h2 class="plot-title">Company Tracking Reach</h2>
+                        <p class="plot-subtitle">
+                            Proportion of the web traffic tracked their trackers.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 checkout">
+                <h4>READ OUR PAPER:</h4>
+
+                    <i class="fa fa-file-text-o"></i>
+                    <span style="font-size: 13px">
+                        <a
+                            target="_blank"
+                            href="https://static.cliqz.com/wp-content/uploads/2016/07/Cliqz-Studie-Tracking-the-Trackers.pdf">
+                            Tracking the Trackers
+                        </a>
+                    </span>
+
+            </div>
+        </div>
+        <div id="eb497110-3c57-4d71-a243-0f7f832a1f54" style="height: 3000px; width: 100%;" class="plotly-graph-div"></div><script type="text/javascript">window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("eb497110-3c57-4d71-a243-0f7f832a1f54", [{"type": "bar", "x": [0.006, 0.006, 0.006, 0.006, 0.006, 0.006, 0.006, 0.006, 0.007, 0.007, 0.007, 0.007, 0.007, 0.007, 0.007, 0.007, 0.007, 0.007, 0.007, 0.008, 0.008, 0.008, 0.008, 0.008, 0.008, 0.008, 0.008, 0.009, 0.009, 0.009, 0.009, 0.009, 0.009, 0.009, 0.01, 0.01, 0.01, 0.01, 0.01, 0.011, 0.011, 0.011, 0.011, 0.011, 0.011, 0.011, 0.011, 0.012, 0.012, 0.012, 0.012, 0.012, 0.013, 0.013, 0.013, 0.014, 0.014, 0.014, 0.016, 0.016, 0.017, 0.018, 0.018, 0.018, 0.02, 0.021, 0.022, 0.022, 0.023, 0.024, 0.025, 0.025, 0.025, 0.026, 0.026, 0.027, 0.027, 0.028, 0.028, 0.029, 0.031, 0.037, 0.038, 0.039, 0.042, 0.045, 0.047, 0.048, 0.052, 0.052, 0.063, 0.065, 0.065, 0.072, 0.073, 0.084, 0.097, 0.168, 0.284, 0.824], "y": ["MarkMonitor", "Segment", "Usabilla", "IAC (InterActiveCorp)", "BuySellAds.com", "ICF Technology", "Tag Commander", "fontawesome.com", "Kameleoon", "RTB House S.A.", "GitHub, Inc.", "Parse.ly", "Alibaba", "xHamster", "Gigya", "Trusted Shops", "xvideos.com", "Str\u00f6er SSP GmbH", "Sizmek Technologies, Inc. ", "Rambler", "Cedexis", "Axel Springer Group", "AB Tasty", "Ensighten", "Yieldlab AG", "Webtrekk", "Neustar ", "Integral Ad Science, Inc.", "MGID Inc.", "DoublePimp", "Imgur", "Traffic Stars", "Smart Adserver", "JW Player", "The ADEX GmbH", "Wingify", "Alexa", "Gruner + Jahr AG", "Mixpanel", "The Trade Desk", "PubMatic, Inc.", "PornHub", "Nugg.ad", "TrafficJunky", "MediaMath, Inc.", "WEBORAMA", "WikiMedia", "PayPal", "Crazy Egg", "OneSignal", "Lotame Solutions, Inc.", "Acxiom", "Disqus", "reddit", "ADITION technologies AG", "jsDelivr", "OpenX Software Ltd.", "ExoClick", "The Rubicon Project, Limited", "Adform A/S", "AT Internet", "LinkedIn", "Gemius SA", "IAB", "Nielsen", "Index Exchange, Inc. ", "Taboola", "JS Foundation", "Outbrain UK Ltd", "TNS", "Salesforce", "Pinterest", "Automattic", "Kaspersky Labs", "ChartBeat", "Mail.Ru Group", "VKontakte", "eBay", "Hotjar", "Optimizely", "Tealium", "LiveInternet", "Quantcast International Limited", "Bootstrap CDN", "Verizon", "INFOnline", "Akamai Technologies", "AppNexus Inc.", "New Relic", "Oracle", "Cloudflare", "Adobe", "Yandex", "Criteo SA", "Microsoft", "Twitter", "comScore, Inc.", "Amazon", "Facebook", "Google"], "marker": {"color": ["#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#BCC4CE", "#A069AB", "#A069AB", "#A069AB", "#A069AB", "#A069AB", "#A069AB", "#A069AB", "#A069AB", "#A069AB", "#A069AB"]}, "orientation": "h"}], {"margin": {"l": 150, "r": 60, "b": 40, "t": 30, "pad": 5}, "showlegend": false, "autosize": true, "height": 3000, "xaxis": {"color": "#5F7C86", "tickformat": "%", "anchor": "free", "position": 0}}, {"showLink": false, "linkText": "Export to plot.ly", "displayModeBar": false})</script>
+        <p class="plot-caption">Generated from Cliqz and Ghostery Anti-Tracking data</p>
+    </div>
+</section>
+
+
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-12 menu">
+                <a href="/privacy-policy.html">
+                    Privacy Policy
+                </a>
+                <span class="divisor">&#x2027;</span>
+                <a target="_blank" href="https://cliqz.com/en/about">
+                    About
+                </a>
+                <span class="divisor">&#x2027;</span>
+                <a target="_blank" href="https://cliqz.com/en/about/careers">
+                    Careers
+                </a>
+                <span class="divisor">&#x2027;</span>
+                <a target="_blank" href="https://cliqz.com/en/download">
+                    Cliqz browser
+                </a>
+                <span class="divisor">&#x2027;</span>
+                <a target="_blank" href="https://www.ghostery.com/en/products/">
+                    Ghostery add-on
+                </a>
+                <span class="divisor">&#x2027;</span>
+                <i class="fa fa fa-github"></i>
+                <a target="_blank" rel="noreferrer" href="https://github.com/cliqz-oss/whotracks.me">
+                    Get the data
+                </a>
+                <div class="copyright">
+                    &copy; Cliqz - All rights reserved. Last updated on 28.08.2018
+                </div>
+
+            </div>
+
+            <div class="col-md-6 col-sm-6 col-xs-12 logos">
+                <a href="https://cliqz.com/en/" target="_blank">
+                    <span class="cliqz-logo"></span>
+                </a>
+                <a href="https://www.ghostery.com/" target="_blank">
+                    <span class="ghostery-logo"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Local javascript modules -->
+    <script src="../static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../static/js/search.js"></script>
+
+
+</footer>
+<!-- END OF FOOTER -->
